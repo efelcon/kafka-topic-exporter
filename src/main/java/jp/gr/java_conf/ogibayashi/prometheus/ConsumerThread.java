@@ -25,6 +25,7 @@ class ConsumerThread implements Runnable {
         try {
             while (!Thread.interrupted()) {
                 ConsumerRecords<String, String> records = consumer.poll(100);
+                // At this line should be implemented a delay for avoiding doing requests constantly 
                 if (records.count() > 0)
                 	LOG.info("Got records count: " + String.valueOf(records.count()));
                 for (ConsumerRecord<String, String> record : records) {
