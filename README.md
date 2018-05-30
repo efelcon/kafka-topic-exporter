@@ -68,7 +68,7 @@ Each record in the topics should be the following format. `timestamp` and `label
   "name": "<metric_name>",
   "value": <metric_value>,
   "timestamp": <epoch_value_with_millis>,
-  "labels: {
+  "labels": {
     "foolabel": "foolabelvalue",
     "barlabel": "barlabelvalue"
   }
